@@ -1,0 +1,26 @@
+{
+    "createroom":{
+       "msgid":1,
+       "route":[
+        {"svc":1, "sn":2, "fn":-1},    
+        {"svc":2, "sn":1, "fn":-1},    
+        {"svc":1, "sn":-1, "fn":-1}
+       ] 
+    },
+    "joinromm":{
+        "msgid":2,
+        "route":[
+         {"svc":1, "sn":2, "fn":-1},    
+         {"svc":2, "sn":1, "fn":-1},    
+         {"svc":1, "sn":-1, "fn":-1}
+        ] 
+     },
+    "test":{
+       "msgid":999,
+       "route":[
+           {"svc":1, "sn":2, "fn":-1},    
+           {"svc":2, "sn":1, "fn":-1},    
+           {"svc":1, "sn":-1, "fn":-1}
+       ] 
+    }      
+}

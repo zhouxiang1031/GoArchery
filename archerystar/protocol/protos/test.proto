@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package protos;
+
+message TestMsgReq {
+    string User = 1;
+    string Desc = 2;
+}
+
+
+message TestMsgResp {
+    string User = 1;
+    string Desc = 2;
+    int32 flag = 3;
+}

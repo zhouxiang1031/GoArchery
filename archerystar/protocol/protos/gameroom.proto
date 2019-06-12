@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package protos;
+
+message RoomPlayer {
+    int32 Id = 1;
+    string Account = 2;
+    string Name = 3;
+    int32 Country = 4;
+    int32 Trophies = 5;
+    repeated int32 Equips = 6;
+    int32 Head = 7;
+    int32 Order = 8;
+}
+
+message GameRoomReq {
+    //int32 Id = 1;
+    int32 Mode = 1;
+    int32 Stage = 2;
+    //int32 LevId = 4;
+    repeated RoomPlayer Players = 3;
+}
+
+message GameRoomResp {
+    uint64 Id = 1;
+    int32 Mode = 2;
+    int32 Stage = 3;
+    int32 LevId = 4;
+    repeated RoomPlayer Players = 5;
+}
+
+message JoinRoomReq {
+    uint64 RoomId = 1;
+    int32 PlayerId = 2;    
+}
+
+message JoinRoomResp {
+    bool IsReady = 3;
+}

@@ -1,0 +1,24 @@
+{
+    "addr": "0.0.0.0:2333",
+    "nettype": 0,
+    "useTls":false,
+    "certfile": "",
+    "keyfile": "",
+    "release": false,
+    "svcCount": 1,
+    "logFile": false,
+    "logLev": 0,
+    "heartbeat":{
+        "Interval":20,
+        "ttl":3
+    },
+    "bufflimit":{
+        "n2gbuuffmax": 100,
+        "g2nbuuffmax": 20
+    },
+    "IsCompression":false,
+    "room":{
+        "update": 200,
+        "buff": 10
+    }
+}
